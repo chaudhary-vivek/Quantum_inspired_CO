@@ -210,3 +210,4 @@ class DSB(SB):  # noqa: N801
             cond = np.abs(self.x) > 1
             self.x = np.where(cond, np.sign(self.x), self.x)
             self.y = np.where(cond, np.zeros_like(self.y), self.y)
+
